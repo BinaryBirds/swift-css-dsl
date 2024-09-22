@@ -38,14 +38,14 @@ public func Padding(_ value: Unit = .zero) -> Property {
     Padding(.length(value))
 }
 
-public func Padding(horizontal: PaddingValue = .length(.zero),
-                    vertical: PaddingValue = .length(.zero)) -> Property {
-    Padding(horizontal.rawValue + " " + vertical.rawValue)
+public func Padding(vertical: PaddingValue = .length(.zero),
+                    horizontal: PaddingValue = .length(.zero)) -> Property {
+    Padding(vertical.rawValue + " " + horizontal.rawValue)
 }
 
-public func Padding(horizontal: Unit = .zero,
-                    vertical: Unit = .zero) -> Property {
-    Padding(horizontal: .length(horizontal), vertical: .length(vertical))
+public func Padding(vertical: Unit = .zero,
+                    horizontal: Unit = .zero) -> Property {
+    Padding(vertical: .length(vertical), horizontal: .length(horizontal))
 }
 
 public func Padding(top: PaddingValue = .length(.zero),

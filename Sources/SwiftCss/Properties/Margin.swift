@@ -42,14 +42,14 @@ public func Margin(_ value: Unit = .zero) -> Property {
     Margin(.length(value))
 }
 
-public func Margin(horizontal: MarginValue = .length(.zero),
-                   vertical: MarginValue = .length(.zero)) -> Property {
-    Margin(horizontal.rawValue + " " + vertical.rawValue)
+public func Margin(vertical: MarginValue = .length(.zero),
+                   horizontal: MarginValue = .length(.zero)) -> Property {
+    Margin(vertical.rawValue + " " + horizontal.rawValue)
 }
 
-public func Margin(horizontal: Unit = .zero,
-                   vertical: Unit = .zero) -> Property {
-    Margin(horizontal: .length(horizontal), vertical: .length(vertical))
+public func Margin(vertical: Unit = .zero,
+                   horizontal: Unit = .zero) -> Property {
+    Margin(vertical: .length(vertical), horizontal: .length(horizontal))
 }
 
 public func Margin(top: MarginValue = .length(.zero),

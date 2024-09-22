@@ -15,8 +15,8 @@ final class SwiftCssTests: XCTestCase {
             Charset("UTF-8")
             Media {
                 Root {
-                    Margin(horizontal: .px(8.5), vertical: .px(8))
-                    Padding(horizontal: .px(8), vertical: .px(8))
+                    Margin(vertical: .px(8.5), horizontal: .px(8))
+                    Padding(vertical: .px(8), horizontal: .px(8))
                 }
             }
         }
@@ -28,8 +28,8 @@ final class SwiftCssTests: XCTestCase {
             Charset("UTF-8")
             Media {
                 Root {
-                    Margin(horizontal: .px(8.5), vertical: .px(8))
-                    Padding(horizontal: .px(8), vertical: .px(8))
+                    Margin(vertical: .px(8.5), horizontal: .px(8))
+                    Padding(vertical: .px(8), horizontal: .px(8))
                 }
             }
         }
@@ -49,8 +49,8 @@ final class SwiftCssTests: XCTestCase {
 
             Media {
                 Root {
-                    Margin(horizontal: .px(8.5), vertical: .px(8))
-                    Padding(horizontal: .px(8), vertical: .px(8))
+                    Margin(vertical: .px(8.5), horizontal: .px(8))
+                    Padding(vertical: .px(8), horizontal: .px(8))
                 }
             }
 
@@ -61,7 +61,7 @@ final class SwiftCssTests: XCTestCase {
             }
             Media(screen: .dark, {
                 All {
-                    Margin(horizontal: .px(8), vertical: .px(8))
+                    Margin(vertical: .px(8), horizontal: .px(8))
                 }
             })
             Media(screen: .standalone) {

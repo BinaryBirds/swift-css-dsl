@@ -49,7 +49,7 @@ final class SelectorTests: XCTestCase {
                     Padding(.zero)
                     Padding(.rem(8))
                     Padding(horizontal: .px(8))
-                    Padding(horizontal: .length(.zero), vertical: .inherit)
+                    Padding(vertical: .inherit, horizontal: .length(.zero))
                 }
             }
         }
@@ -58,8 +58,8 @@ final class SelectorTests: XCTestCase {
                                * {
                                    padding: 0;
                                    padding: 8rem;
-                                   padding: 8px 0;
-                                   padding: 0 inherit;
+                                   padding: 0 8px;
+                                   padding: inherit 0;
                                }
                                """#)
     }
